@@ -4,7 +4,7 @@ from users.models import User
 
 
 class UserAdmin(BaseUserAdmin):
-    list_display = ('username', 'email', 'phone', 'role')
+    list_display = ('username', 'email', 'phone', 'role', 'is_staff', 'is_superuser')
     search_fields = ('username', 'email', 'phone')
     list_filter = ('role', 'is_staff', 'is_superuser')
 

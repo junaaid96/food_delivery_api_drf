@@ -9,13 +9,13 @@ class RestaurantAdmin(admin.ModelAdmin):
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ('name', 'menu_category', 'restaurant')
-    search_fields = ('name', 'menu_category', 'restaurant')
-    list_filter = ('menu_category',)
+    list_display = ('name', 'restaurant')
+    search_fields = ('name', 'restaurant')
+    list_filter = ('restaurant',)
 
 
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'menu')
+    list_display = ('name', 'price', 'available_stock', 'order_count', 'menu')
     search_fields = ('name', 'price', 'menu')
     list_filter = ('menu',)
 
