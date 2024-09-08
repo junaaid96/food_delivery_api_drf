@@ -20,7 +20,7 @@ Live link: https://food-delivery-api-drf.onrender.com
     - POST - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/
     - PUT - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/[id]/
     - PATCH - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/[id]/
-    - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/delete/[id]/
+    - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/[id]/
   - **Menu API**:
     - GET - 
     - POST - 
