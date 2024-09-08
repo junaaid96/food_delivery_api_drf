@@ -22,14 +22,17 @@ Live link: https://food-delivery-api-drf.onrender.com
     - PATCH - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/[id]/
     - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/restaurants/[id]/
   - **Menu API**:
-    - GET - 
-    - POST - 
-    - PUT - 
-    - DELETE - 
+    - GET - http://food-delivery-api-drf.onrender.com/restaurants/menus/
+    - POST - http://food-delivery-api-drf.onrender.com/restaurants/menus/
+    - PUT - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
+    - PATCH - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
+    - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
   - **Menu-Item API**:
-    - GET - 
-    - POST - 
-    - PUT - 
-    - DELETE - 
+    - GET - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/
+    - POST - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/
+    - PUT - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
+    - PATCH - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
+    - DELETE - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
   - **Order API**:
-    - GET - 
+    - GET - http://food-delivery-api-drf.onrender.com/orders/orders/
+    - POST - http://food-delivery-api-drf.onrender.com/orders/orders/
