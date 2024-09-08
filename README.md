@@ -2,7 +2,7 @@
 
 Live link: https://food-delivery-api-drf.onrender.com
 
-**Django Admin Credentials**
+**Django Admin Credentials** (https://food-delivery-api-drf.onrender.com/admin/)
 - **Username:** `admin`
 - **Password:** `123456`
 
@@ -24,15 +24,15 @@ Live link: https://food-delivery-api-drf.onrender.com
   - **Menu API**:
     - GET - http://food-delivery-api-drf.onrender.com/restaurants/menus/
     - POST - http://food-delivery-api-drf.onrender.com/restaurants/menus/
-    - PUT - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
-    - PATCH - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
-    - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]
+    - PUT - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]/
+    - PATCH - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]/
+    - DELETE - http://food-delivery-api-drf.onrender.com/restaurants/menus/[id]/
   - **Menu-Item API**:
     - GET - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/
     - POST - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/
-    - PUT - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
-    - PATCH - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
-    - DELETE - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]
+    - PUT - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]/
+    - PATCH - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]/
+    - DELETE - https://food-delivery-api-drf.onrender.com/restaurants/menu_items/[id]/
   - **Order API**:
     - GET - http://food-delivery-api-drf.onrender.com/orders/orders/
     - POST - http://food-delivery-api-drf.onrender.com/orders/orders/
