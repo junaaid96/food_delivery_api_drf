@@ -12,6 +12,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
+# Register a new user
 class UserRegisterView(generics.CreateAPIView):
     serializer_class = UserRegisterSerializer
 
@@ -24,19 +25,25 @@ class UserLoginView(APIView):
             password = serializer.validated_data['password']
 
             try:
+                # check if user exists
                 user = User.objects.get(username=username)
             except User.DoesNotExist:
                 return Response({'error': 'User not found!'}, status=status.HTTP_400_BAD_REQUEST)
 
+            # check if user is active
             if not user.is_active:
                 return Response({'error': 'Please activate your account before login!'}, status=status.HTTP_400_BAD_REQUEST)
 
             user = authenticate(request, username=username, password=password)
 
+            # check if username and password are correct
             if user is None:
                 return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
+            # login user
             login(request, user)
+
+            # creating a token for user
             token, _ = Token.objects.get_or_create(user=user)
             return Response({
                 "message": "Login successful",
@@ -50,5 +57,6 @@ class UserLoginView(APIView):
 
 class UserLogoutView(generics.GenericAPIView):
     def post(self, request, *args, **kwargs):
+        # logout user
         logout(request)
         return Response({"message": "Logout successful"}, status=status.HTTP_200_OK)

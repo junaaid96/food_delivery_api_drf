@@ -10,8 +10,10 @@ class OrderViewSet(viewsets.ModelViewSet):
     serializer_class = OrderSerializer
 
     def get_permissions(self):
+        # anyone can place an order
         if self.action == 'create':
             permission_classes = [permissions.IsAuthenticated]
+        # only owner and employee can view the order
         elif self.action == 'list':
             permission_classes = [IsOwner | IsEmployee]
         else:
