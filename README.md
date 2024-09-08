@@ -2,11 +2,11 @@
 
 Live link: https://food-delivery-api-drf.onrender.com
 
-**django admin credentials**
-- username: admin
-- password: 123456
+**Django Admin Credentials**
+- **Username:** `admin`
+- **Password:** `123456`
 
-- **All API Endpoints**:
+**All API Endpoints**:
   - **Register API**:
     - POST - https://food-delivery-api-drf.onrender.com/users/register/
   - **Login API**:
