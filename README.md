@@ -1,7 +1,7 @@
 # food_delivery_api_drf
 
 
-**Django Admin Credentials**
+**Django Admin (Super User) Credentials**
 - **Username:** `admin`
 - **Password:** `123456`
 - **Login:** https://food-delivery-api-drf.onrender.com/admin/
